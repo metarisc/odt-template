@@ -15,10 +15,10 @@ use Kdubuc\Odt\Tag\Markdown\Markdown;
 
 class Parser
 {
-    public function parse(string $odtFilePath, array $pages) : Odt
+    public function parse(string $odtContent, array $pages) : Odt
     {
         /** @var Odt $odt */
-        $odt      = (new Odt())->openFile($odtFilePath);
+        $odt      = (new Odt())->openFromString($odtContent);
         $pipeline = [
             new Segment(),
             new Table(),

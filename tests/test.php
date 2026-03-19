@@ -11,9 +11,10 @@ const filePath = __DIR__.'/../tests/template.odt';
 if (!file_exists(filePath)) {
     throw new RuntimeException('File not found: '.filePath);
 }
+$file_contents = file_get_contents(filePath);
 
 $parser  = new Parser();
-$content = $parser->parse(filePath, $pages);
+$content = $parser->parse($file_contents, $pages);
 var_dump($content);
 $datetime = (new DateTime())->format(\DATE_ATOM);
 $content->saveAsFile(__DIR__.'/../tests/output'.$datetime.'.odt')->close();
