@@ -13,6 +13,7 @@
             "Metarisc\\OdtParser\\": "src/"
         }
     },
+
     "require": {
         "metarisc-odt/lexical-parser": "*",
         "loupmyr/odt": "*",
