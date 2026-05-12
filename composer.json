@@ -4,20 +4,17 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/metarisc/lexical-parser-php"
-        },
-        {
-            "type": "vcs",
             "url": "https://github.com/loupmyr/odt-template"
         }
     ],
+
     "autoload": {
         "psr-4": {
             "Metarisc\\OdtParser\\": "src/"
         }
     },
     "require": {
-        "metarisc/lexical-parser": "*",
+        "metarisc-odt/lexical-parser": "*",
         "loupmyr/odt": "*",
         "beberlei/assert": "^3.3"
     },
