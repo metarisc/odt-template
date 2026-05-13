@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5ad6d51178582387c00b19e597bc41c1",
+    "content-hash": "f6d9a77deb092c589678acf2313bcc68",
     "packages": [
         {
             "name": "adbario/php-dot-notation",
@@ -756,6 +756,54 @@
                 "source": "https://github.com/LoupMyr/odt-template/tree/master"
             },
             "time": "2026-03-16T14:30:13+00:00"
+        },
+        {
+            "name": "metarisc-odt/base-odt-template",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/metarisc/base-odt-template.git",
+                "reference": "af26fb1e73f1124ffeefdc623c300bf5abc4079d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/metarisc/base-odt-template/zipball/af26fb1e73f1124ffeefdc623c300bf5abc4079d",
+                "reference": "af26fb1e73f1124ffeefdc623c300bf5abc4079d",
+                "shasum": ""
+            },
+            "require": {
+                "adbario/php-dot-notation": "^2.0",
+                "bacon/bacon-qr-code": "^2.0",
+                "intervention/image": "^2.0",
+                "league/commonmark": "^2.7",
+                "nelexa/zip": "^4.0",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "kdubuc/php-cs-fixer-rules": "^1.0",
+                "phpunit/phpunit": "^9.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Kdubuc\\Odt\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "CECILL-2.1"
+            ],
+            "description": "ODT rendering",
+            "keywords": [
+                "odt",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/metarisc/base-odt-template/issues",
+                "source": "https://github.com/metarisc/base-odt-template/tree/main"
+            },
+            "time": "2026-05-13T07:33:36+00:00"
         },
         {
             "name": "metarisc-odt/lexical-parser",
@@ -4961,10 +5009,12 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {},
+    "stability-flags": {
+        "metarisc-odt/base-odt-template": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": {},
-    "platform-dev": {},
+    "platform": [],
+    "platform-dev": [],
     "plugin-api-version": "2.6.0"
 }

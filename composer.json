@@ -1,13 +1,6 @@
 {
     "name": "metarisc-odt/odt-template",
 
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/loupmyr/odt-template"
-        }
-    ],
-
     "autoload": {
         "psr-4": {
             "Metarisc\\OdtParser\\": "src/"
@@ -17,7 +10,8 @@
     "require": {
         "metarisc-odt/lexical-parser": "*",
         "loupmyr/odt": "*",
-        "beberlei/assert": "^3.3"
+        "beberlei/assert": "^3.3",
+        "metarisc-odt/base-odt-template": "dev-main"
     },
 
     "require-dev": {
