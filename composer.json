@@ -9,7 +9,6 @@
 
     "require": {
         "metarisc-odt/lexical-parser": "*",
-        "loupmyr/odt": "*",
         "beberlei/assert": "^3.3",
         "metarisc-odt/base-odt-template": "dev-main"
     },
