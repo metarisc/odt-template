@@ -44,9 +44,11 @@ class Lexical extends Tag
             $result = (new Converter())->convert($value, ['output_format' => 'odt']);
 
 
+
+            // Charge le XML dans un DOMDocument pour valider sa structure
+            // Note : libxml_use_internal_errors permet d'éviter que les warnings liés aux namespaces non définis ne soient convertis en exceptions 
             $doc = new \DOMDocument();
             libxml_use_internal_errors(true);
-
             $doc->loadXML($result);
             libxml_clear_errors();
 
