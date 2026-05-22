@@ -696,68 +696,6 @@
             "time": "2022-12-11T20:36:23+00:00"
         },
         {
-            "name": "loupmyr/odt",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/LoupMyr/odt-template.git",
-                "reference": "6c179336db3aee7c7ca6a713a1384ece30e68e3e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/LoupMyr/odt-template/zipball/6c179336db3aee7c7ca6a713a1384ece30e68e3e",
-                "reference": "6c179336db3aee7c7ca6a713a1384ece30e68e3e",
-                "shasum": ""
-            },
-            "require": {
-                "adbario/php-dot-notation": "^2.0",
-                "bacon/bacon-qr-code": "^2.0",
-                "intervention/image": "^2.0",
-                "league/commonmark": "^2.7",
-                "nelexa/zip": "^4.0",
-                "php": "^8.2"
-            },
-            "require-dev": {
-                "kdubuc/php-cs-fixer-rules": "^1.0",
-                "phpunit/phpunit": "^9.0"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Kdubuc\\Odt\\": "src"
-                }
-            },
-            "scripts": {
-                "code:tests": [
-                    "vendor/bin/phpunit"
-                ],
-                "code:fix-cs": [
-                    "vendor/bin/php-cs-fixer fix --config=vendor/kdubuc/php-cs-fixer-rules/php-cs-fixer.php"
-                ]
-            },
-            "license": [
-                "CECILL-2.1"
-            ],
-            "authors": [
-                {
-                    "role": "Developer",
-                    "name": "Kevin DUBUC",
-                    "email": "kevindubuc62@gmail.com",
-                    "homepage": "http://kevindubuc.fr"
-                }
-            ],
-            "description": "ODT rendering",
-            "keywords": [
-                "odt",
-                "php"
-            ],
-            "support": {
-                "source": "https://github.com/LoupMyr/odt-template/tree/master"
-            },
-            "time": "2026-03-16T14:30:13+00:00"
-        },
-        {
             "name": "metarisc-odt/base-odt-template",
             "version": "dev-main",
             "source": {
